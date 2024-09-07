@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todolist.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="title">
+        <h1>TO DO LIST</h1>
+    </div>
+    <div class="date">
+        <span id="current-date">DATE: 0000-00-00</span>
+    </div>
+    <div class="list">
+            <label for="item"></label>
+            <input id="item" type="text" placeholder="Add your new todo" />
+            <button type="button" onclick="addItem(); return false;">+</button>
+    </div>
+    <div class= "clear">
+        <ul id="list"></ul>
+        <p id="counter">You have 0 pending tasks</p>
+          <button onclick="deleteAll()">clear All</button>
+      </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+</html>
